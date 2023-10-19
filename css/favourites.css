@@ -36,3 +36,15 @@ a.favourite {
 a.favourite:hover {
 	filter: brightness(100%);
 }
+
+.tooltip {
+	background: rgba(23, 29, 34, 0.842) !important;
+}
+
+.tooltip .title {
+	background: unset !important;
+}
+
+.tooltip .content {
+	display: none;
+}
