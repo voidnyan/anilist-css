@@ -1,0 +1,76 @@
+a.favourite {
+	margin-bottom: 32px !important;
+}
+
+a.favourite::after {
+	/* content: "💭 17"; */
+	font-size: 11px;
+	position: absolute;
+	bottom: 0px;
+	text-align: center;
+	width: 100%;
+	background: rgba(var(--color-overlay), 0.5);
+	padding: 4px;
+	color: white;
+	user-select: all;
+	opacity: 0;
+	transition: opacity ease-in 0.15s;
+	transition-delay: 0.3s;
+}
+
+a.favourite:hover::after {
+	opacity: 1;
+	transition-delay: 0s;
+}
+
+/* Violet Evergarden */
+a.favourite[href*="anime/21827"]::after {
+	content: "💭 17";
+}
+
+/* Liz to Aoi Tori */
+a.favourite[href*="anime/100178"]::after {
+	content: "💭 13";
+}
+
+/* Place Further than the Universe */
+a.favourite[href*="anime/99426"]::after {
+	content: "💭 10";
+}
+
+/* Non Non Biyori */
+a.favourite[href*="anime/17549"]::after,
+a.favourite[href*="anime/20694"]::after,
+a.favourite[href*="anime/109403"]::after {
+	content: "💭 27";
+}
+
+/* Lycoris Recoil */
+a.favourite[href*="anime/143270"]::after {
+	content: "💭 6";
+}
+
+/* Chihayafuru */
+a.favourite[href*="anime/101215"]::after {
+	content: "💭 24";
+}
+
+/* Witch from Mercury */
+a.favourite[href*="anime/139274"]::after {
+	content: "💭 7";
+}
+
+/* Tropical Fish */
+a.favourite[href*="manga/100187"]::after {
+	content: "💭 12";
+}
+
+/* Adachi to Shimamura */
+a.favourite[href*="manga/92550"]::after {
+	content: "💭 5";
+}
+
+/* Girls Last Tour */
+a.favourite[href*="manga/85412"]::after {
+	content: "💭 16";
+}

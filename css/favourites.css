@@ -9,11 +9,11 @@ div.favourites:nth-child(7) > h2:nth-child(1)::after {
 	visibility: visible;
 }
 
-a.character[href*="Mercury-Suletta"] {
+a.character[href*="character/279507"] {
 	background-image: url("https://i.ibb.co/hFF9mTy/mercury-suletta.jpg") !important;
 }
 
-a.character[href*="Rembran-Miorine"] {
+a.character[href*="character/279508"] {
 	background-image: url("https://i.ibb.co/ZgGZgmP/rembran-miorine.jpg") !important;
 }
 
@@ -27,14 +27,6 @@ a.character[href*="Rembran-Miorine"] {
 	background: unset !important;
 	padding-top: 2px !important;
 	margin-bottom: -25px !important;
-}
-
-a.favourite {
-	filter: brightness(85%);
-}
-
-a.favourite:hover {
-	filter: brightness(100%);
 }
 
 .tooltip {

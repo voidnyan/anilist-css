@@ -21,16 +21,17 @@
 		const newStyleTag = document.createElement("style");
 		newStyleTag.setAttribute("id", "customCSS-automail-styles");
 		newStyleTag.innerHTML = `
-@import url('http://localhost:3005/css/about.css?v=${version}');
-@import url('http://localhost:3005/css/activity-feed.css?v=${version}');
-@import url('http://localhost:3005/css/badges.css?v=${version}');
-@import url('http://localhost:3005/css/favourites.css?v=${version}');
-@import url('http://localhost:3005/css/misc.css?v=${version}');
-@import url('http://localhost:3005/css/nav.css?v=${version}');
-@import url('http://localhost:3005/css/stats-wrap.css?v=${version}');
-@import url('http://localhost:3005/css/width-reset.css?v=${version}');
-@import url('http://localhost:3005/css/social.css?v=${version}');
-@import url("http://localhost:3005/css/discord-badge.css?v=${version}");
+            @import url('http://localhost:3005/css/about.css?v=${version}');
+            @import url('http://localhost:3005/css/activity-feed.css?v=${version}');
+            @import url('http://localhost:3005/css/badges.css?v=${version}');
+            @import url('http://localhost:3005/css/favourites.css?v=${version}');
+            @import url('http://localhost:3005/css/misc.css?v=${version}');
+            @import url('http://localhost:3005/css/nav.css?v=${version}');
+            @import url('http://localhost:3005/css/stats-wrap.css?v=${version}');
+            @import url('http://localhost:3005/css/width-reset.css?v=${version}');
+            @import url('http://localhost:3005/css/social.css?v=${version}');
+            @import url("http://localhost:3005/css/discord-badge.css?v=${version}");
+            @import url("http://localhost:3005/css/favourites-thoughts.css?v=${version}");
         `;
 		version++;
 		document.head.append(newStyleTag);
