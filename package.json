@@ -1,0 +1,15 @@
+{
+    "name": "anilist-css",
+    "version": "1.0.0",
+    "description": "my [anilist profile](https://anilist.co/user/voidnyan/) custom css",
+    "main": "dev-host.js",
+    "scripts": {
+        "dev": "nodemon dev-host.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "express": "^4.18.2",
+        "nodemon": "^3.0.1"
+    }
+}
