@@ -13,6 +13,10 @@
 
 	let version = 0;
 	async function updateStyle() {
+		if (window.location.pathname !== "/user/voidnyan/") {
+			return;
+		}
+
 		const styleTag = document.querySelector("#customCSS-automail-styles");
 		const newStyleTag = document.createElement("style");
 		newStyleTag.setAttribute("id", "customCSS-automail-styles");
@@ -25,15 +29,19 @@
 @import url('http://localhost:3005/css/nav.css?v=${version}');
 @import url('http://localhost:3005/css/stats-wrap.css?v=${version}');
 @import url('http://localhost:3005/css/width-reset.css?v=${version}');
+@import url('http://localhost:3005/css/social.css?v=${version}');
         `;
 		version++;
 		document.head.append(newStyleTag);
 		setTimeout(() => {
 			styleTag.remove();
-		}, 500);
+		}, 1000);
 	}
 
-	setInterval(() => {
-		updateStyle();
-	}, 1000);
+	fetch("http://localhost:3005/ping", { mode: "no-cors" }).then((res) => {
+		console.log("customCSS autoreload ready.");
+		setInterval(() => {
+			updateStyle();
+		}, 2000);
+	});
 })();
