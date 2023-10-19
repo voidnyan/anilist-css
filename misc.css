@@ -1,0 +1,19 @@
+div.desktop:nth-child(2) {
+	display: none;
+}
+
+div.desktop:nth-child(3) {
+	display: none;
+}
+
+a.name[href*="tdbn"] {
+	position: relative;
+	visibility: hidden;
+}
+
+a.name[href*="tdbn"]::before {
+	content: "toadbean 🐠";
+	position: absolute;
+	visibility: visible;
+	width: max-content;
+}

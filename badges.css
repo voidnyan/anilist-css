@@ -1,0 +1,33 @@
+.actions .nav-btn:not(.donator-badge),
+.follower-badge {
+	background-color: rgba(var(--color-blue), 0.2) !important;
+	transition: background 0.4s ease-in;
+}
+
+.actions .nav-btn:not(.donator-badge):hover,
+.follower-badge:hover {
+	background-color: rgba(var(--color-blue), 0.6) !important;
+}
+
+.follower-badge,
+.follower-badge:hover {
+	position: relative;
+	color: transparent !important;
+}
+
+.follower-badge::after {
+	display: block;
+	text-align: center;
+	width: 100%;
+	content: "loves you";
+	position: absolute;
+	padding: 5px 8px;
+	top: 0;
+	left: 0px;
+	color: white;
+}
+
+.donator-badge {
+	animation-duration: unset !important;
+	background-color: rgba(var(--color-blue), 0.2) !important;
+}

@@ -1,0 +1,56 @@
+/* Main nav */
+#nav.nav {
+	opacity: 0.5;
+	transition: all 0.8s ease 0s, top 0.5s ease 0s !important;
+}
+
+#nav.nav:hover {
+	opacity: 1;
+}
+
+/* Custom profile navbar */
+.nav-wrap {
+	background: unset !important;
+	user-select: none;
+}
+
+.nav > .link {
+	position: relative;
+}
+
+.nav > .link::after {
+	content: "☂";
+	font-style: normal;
+	position: absolute;
+	left: 0;
+	height: 0px;
+	bottom: 3px;
+	opacity: 0;
+	width: 100%;
+	background: rgb(var(--color-blue));
+	transition: all 0.2s ease-in-out;
+	text-align: center;
+}
+
+.nav > .router-link-active::after,
+.nav > .link:hover::after {
+	opacity: 1;
+	bottom: 12px;
+	background: rgb(var(--color-blue));
+}
+
+.nav > .router-link-active {
+	background: unset !important;
+}
+
+.nav-wrap a {
+	text-transform: lowercase;
+	font-style: italic;
+	letter-spacing: 1px;
+}
+
+/* Remove Submissions-tab and reviews-tab */
+.nav-wrap a.link:nth-child(7),
+.nav-wrap a.link:nth-child(8) {
+	display: none;
+}

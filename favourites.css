@@ -1,0 +1,38 @@
+div.favourites:nth-child(7) > h2:nth-child(1) {
+	position: relative;
+	visibility: hidden;
+}
+
+div.favourites:nth-child(7) > h2:nth-child(1)::after {
+	content: "Artists";
+	position: absolute;
+	visibility: visible;
+}
+
+a.character[href*="Mercury-Suletta"] {
+	background-image: url("https://i.ibb.co/hFF9mTy/mercury-suletta.jpg") !important;
+}
+
+a.character[href*="Rembran-Miorine"] {
+	background-image: url("https://i.ibb.co/ZgGZgmP/rembran-miorine.jpg") !important;
+}
+
+.overview .section:first-child .section-header {
+	text-transform: lowercase;
+	font-style: italic;
+	user-select: none;
+}
+
+.favourites.preview .favourites-wrap {
+	background: unset !important;
+	padding-top: 2px !important;
+	margin-bottom: -25px !important;
+}
+
+a.favourite {
+	filter: brightness(85%);
+}
+
+a.favourite:hover {
+	filter: brightness(100%);
+}
