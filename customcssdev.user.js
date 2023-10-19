@@ -30,6 +30,7 @@
 @import url('http://localhost:3005/css/stats-wrap.css?v=${version}');
 @import url('http://localhost:3005/css/width-reset.css?v=${version}');
 @import url('http://localhost:3005/css/social.css?v=${version}');
+@import url("http://localhost:3005/css/discord-badge.css?v=${version}");
         `;
 		version++;
 		document.head.append(newStyleTag);
@@ -38,10 +39,14 @@
 		}, 1000);
 	}
 
-	fetch("http://localhost:3005/ping", { mode: "no-cors" }).then((res) => {
-		console.log("customCSS autoreload ready.");
-		setInterval(() => {
-			updateStyle();
-		}, 2000);
-	});
+	fetch("http://localhost:3005/ping", { mode: "no-cors" })
+		.then((res) => {
+			console.log("customCSS autoreload ready.");
+			setInterval(() => {
+				updateStyle();
+			}, 2000);
+		})
+		.catch((err) => {
+			return;
+		});
 })();

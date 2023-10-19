@@ -1,0 +1,12 @@
+.user:has(.follower-badge) .banner-content .name-wrapper {
+	position: relative;
+}
+
+.user:has(.follower-badge) .banner-content .name-wrapper::after {
+	content: "@voidnyan";
+	color: rgb(var(--color-blue));
+	position: absolute;
+	padding: 22px 25px;
+	font-size: 12px;
+	left: 0;
+}
