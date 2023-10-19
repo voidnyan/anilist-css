@@ -8,14 +8,18 @@ div.desktop:nth-child(3) {
 
 a.name[href*="tdbn"] {
 	position: relative;
-	visibility: hidden;
+	color: transparent !important;
 }
 
 a.name[href*="tdbn"]::before {
-	content: "toadbean 🐠";
+	content: "toadbean 🐠" !important;
 	position: absolute;
-	visibility: visible;
+	color: rgb(var(--color-text));
 	width: max-content;
+}
+
+a.name[href*="tdbn"]::after {
+	visibility: hidden;
 }
 
 .tooltip:has(.prev-name-container) {

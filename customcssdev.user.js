@@ -13,7 +13,7 @@
 
 	let version = 0;
 	async function updateStyle() {
-		if (window.location.pathname !== "/user/voidnyan/") {
+		if (!window.location.pathname.startsWith("/user/voidnyan/")) {
 			return;
 		}
 

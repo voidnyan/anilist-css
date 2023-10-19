@@ -1,0 +1,18 @@
+.user-follow .wrap,
+.user-follow.hohSocialContent {
+	grid-row-gap: 40px;
+}
+
+.follow-card {
+	position: relative;
+}
+
+.follow-card .avatar .name,
+.user-follow.hohSocialContent .avatar .name {
+	opacity: 1 !important;
+	height: calc(100% + 35px) !important;
+	position: absolute;
+	bottom: -35px;
+	background: unset !important;
+	word-break: keep-all;
+}
