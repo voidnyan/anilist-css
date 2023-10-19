@@ -17,3 +17,7 @@ a.name[href*="tdbn"]::before {
 	visibility: visible;
 	width: max-content;
 }
+
+.tooltip:has(.prev-name-container) {
+	display: none;
+}
