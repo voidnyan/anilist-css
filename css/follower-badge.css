@@ -1,0 +1,17 @@
+.follower-badge,
+.follower-badge:hover {
+	position: relative;
+	color: transparent !important;
+}
+
+.follower-badge::after {
+	display: block;
+	text-align: center;
+	width: 100%;
+	content: var(--follower-badge-text);
+	position: absolute;
+	padding: 5px 8px;
+	top: 0;
+	left: 0px;
+	color: white;
+}

@@ -31,7 +31,9 @@
             @import url('http://localhost:3005/css/width-reset.css?v=${version}');
             @import url('http://localhost:3005/css/social.css?v=${version}');
             @import url("http://localhost:3005/css/discord-badge.css?v=${version}");
-            @import url("http://localhost:3005/css/favourites-thoughts.css?v=${version}");
+            @import url("http://localhost:3005/css/follower-badge.css?v=${version}");
+            @import url("http://localhost:3005/voidnyan/favourites-thoughts.css?v=${version}");
+            @import url("http://localhost:3005/voidnyan/favourites-characters.css?v=${version}");
         `;
 		version++;
 		document.head.append(newStyleTag);

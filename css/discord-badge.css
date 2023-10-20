@@ -3,7 +3,7 @@
 }
 
 .user:has(.follower-badge) .banner-content .name-wrapper::after {
-	content: "@voidnyan";
+	content: var(--discord-user);
 	color: rgb(var(--color-blue));
 	position: absolute;
 	padding: 22px 25px;

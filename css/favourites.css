@@ -1,22 +1,3 @@
-div.favourites:nth-child(7) > h2:nth-child(1) {
-	position: relative;
-	visibility: hidden;
-}
-
-div.favourites:nth-child(7) > h2:nth-child(1)::after {
-	content: "Artists";
-	position: absolute;
-	visibility: visible;
-}
-
-a.character[href*="character/279507"] {
-	background-image: url("https://i.ibb.co/hFF9mTy/mercury-suletta.jpg") !important;
-}
-
-a.character[href*="character/279508"] {
-	background-image: url("https://i.ibb.co/ZgGZgmP/rembran-miorine.jpg") !important;
-}
-
 .overview .section:first-child .section-header {
 	text-transform: lowercase;
 	font-style: italic;

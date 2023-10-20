@@ -19,7 +19,7 @@
 }
 
 .nav > .link::after {
-	content: "☂";
+	content: var(--nav-symbol);
 	font-style: normal;
 	position: absolute;
 	left: 0;
