@@ -1,6 +1,6 @@
 /* Main nav */
 #nav.nav {
-	opacity: 0.5;
+	background-color: rgba(var(--color-background), 0.5);
 	transition: all 0.8s ease 0s, top 0.5s ease 0s !important;
 }
 

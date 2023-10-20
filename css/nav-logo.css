@@ -1,0 +1,17 @@
+#nav.nav a.logo img {
+	mask: url("../svg/anilist-logo.svg");
+	mask-repeat: no-repeat;
+	mask-size: contain;
+	background-color: var(--color-logo);
+	height: 100%;
+	content: url("../svg/transparent.png");
+	z-index: -1;
+	margin-left: -5px;
+}
+
+#nav.nav a.logo {
+	background: url("../svg/anilist-logo-A.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 75%;
+}

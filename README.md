@@ -28,6 +28,7 @@ Please note that while I try to make most of the CSS modular and usable for all,
 | --nav-symbol | css/nav.css | displayed under profile navigation links |
 | --discord-user | css/discord-badge.css | display a username under AL username for those that you follow |
 | --follower-badge-text | css/follower-badge.css | replace the text displayed when you follow someone |
+| --color-logo | css/nav-logo.css | change the color of AniList logo. Hex-value recommended. Unfortunately the navbar is out of scope for the profile theme color. |
 
 You can declare these variables in your own custom CSS.
 
@@ -36,5 +37,7 @@ You can declare these variables in your own custom CSS.
 	--nav-symbol: "☂";
     --discord-user: "@username";
     --follower-badge-text: "loves you";
+    --color-logo: #685182;
+    /*--color-logo: rgb(var(--color-blue)); */
 }
 ```
