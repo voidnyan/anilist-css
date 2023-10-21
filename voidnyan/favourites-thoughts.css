@@ -31,6 +31,11 @@ a.favourite[href*="anime/21827"]::after {
 	content: var(--thought-symbol) " 17";
 }
 
+/* Super Cub */
+a.favourite[href*="anime/113418"]::after {
+	content: var(--thought-symbol) " 28";
+}
+
 /* Liz to Aoi Tori */
 a.favourite[href*="anime/100178"]::after {
 	content: var(--thought-symbol) " 13";

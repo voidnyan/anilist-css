@@ -34,6 +34,7 @@
             @import url("http://localhost:3005/css/follower-badge.css?v=${version}");
             @import url("http://localhost:3005/voidnyan/favourites-thoughts.css?v=${version}");
             @import url("http://localhost:3005/voidnyan/favourites-characters.css?v=${version}");
+            @import url("http://localhost:3005/css/nav-logo.css?v=${version}");
         `;
 		version++;
 		document.head.append(newStyleTag);
