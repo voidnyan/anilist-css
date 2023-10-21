@@ -6,22 +6,6 @@ div.desktop:nth-child(3) {
 	display: none;
 }
 
-a.name[href*="tdbn"] {
-	position: relative;
-	color: transparent !important;
-}
-
-a.name[href*="tdbn"]::before {
-	content: "toadbean 🐠" !important;
-	position: absolute;
-	color: rgb(var(--color-text));
-	width: max-content;
-}
-
-a.name[href*="tdbn"]::after {
-	visibility: hidden;
-}
-
 .tooltip:has(.prev-name-container) {
 	display: none;
 }

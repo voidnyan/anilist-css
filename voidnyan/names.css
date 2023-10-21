@@ -1,0 +1,19 @@
+a.name[href*="tdbn"] {
+	position: relative;
+	color: transparent !important;
+}
+
+a.name[href*="tdbn"]::before {
+	content: "toadbean 🐠" !important;
+	position: absolute;
+	color: rgb(var(--color-blue));
+	width: max-content;
+}
+
+.follow-card a.name[href*="tdbn"]::before {
+	color: rgb(var(--color-text));
+}
+
+a.name[href*="tdbn"]::after {
+	visibility: hidden;
+}
