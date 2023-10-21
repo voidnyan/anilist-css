@@ -41,6 +41,11 @@ a.favourite[href*="anime/100178"]::after {
 	content: var(--thought-symbol) " 13";
 }
 
+/* Aria */
+a.favourite[href*="anime/3297"]::after {
+	content: var(--thought-symbol) " 8";
+}
+
 /* Place Further than the Universe */
 a.favourite[href*="anime/99426"]::after {
 	content: var(--thought-symbol) " 10";
