@@ -1,12 +1,6 @@
 .actions .nav-btn:not(.donator-badge),
 .follower-badge {
 	background-color: rgba(var(--color-blue), 0.2) !important;
-	transition: background 0.4s ease-in;
-}
-
-.actions .nav-btn:not(.donator-badge):hover,
-.follower-badge:hover {
-	background-color: rgba(var(--color-blue), 0.6) !important;
 }
 
 .donator-badge {

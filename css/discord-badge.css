@@ -4,7 +4,7 @@
 
 .user:has(.follower-badge) .banner-content .name-wrapper::after {
 	content: var(--discord-user);
-	color: rgb(var(--color-blue));
+	color: rgb(var(--color-text));
 	position: absolute;
 	padding: 22px 25px;
 	font-size: 12px;
