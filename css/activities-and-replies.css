@@ -1,0 +1,37 @@
+.activity-feed-wrap blockquote {
+	border-left: solid 5px rgb(var(--color-blue));
+	background: unset;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.activity-feed-wrap blockquote p {
+	display: inline;
+}
+
+.activity-feed-wrap blockquote::before,
+.activity-feed-wrap blockquote::after {
+	display: inline-block;
+	color: rgb(var(--color-blue));
+	/* font-size: 20px; */
+}
+
+.activity-feed-wrap blockquote::before {
+	content: "❝ ";
+}
+
+.activity-feed-wrap blockquote::after {
+	content: " ❞";
+}
+
+.activity-feed-wrap :is(strong, em) {
+	color: color-mix(
+		in srgb,
+		rgb(var(--color-blue)) 50%,
+		rgb(var(--color-text))
+	);
+}
+
+.activity-feed-wrap :is(h1, h2, h3, h4, h5) > em {
+	color: rgb(var(--color-text)) !important;
+}

@@ -19,8 +19,3 @@
 		rgb(var(--color-text))
 	);
 }
-
-.about span,
-.about p:has(span) {
-	display: none;
-}
