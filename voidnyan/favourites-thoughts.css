@@ -69,7 +69,7 @@ a.favourite[href*="anime/101215"]::after {
 }
 
 /* Witch from Mercury */
-a.favourite[href*="anime/139274"]::after {
+a.favourite[href*="anime/139274/"]::after {
 	content: var(--thought-symbol) " 7";
 }
 

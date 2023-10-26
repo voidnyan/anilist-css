@@ -2,6 +2,7 @@
 	text-transform: lowercase;
 	font-style: italic;
 	user-select: none;
+	margin-bottom: 0px !important;
 }
 
 .favourites.preview .favourites-wrap {

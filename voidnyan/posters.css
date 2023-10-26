@@ -1,0 +1,20 @@
+/* Witch from Mercury */
+a.favourite[href*="anime/139274/"] {
+	background-image: url("https://i.ibb.co/w6GSvws/witch-from-mercury.jpg") !important;
+	/* background-image: url("https://i.ibb.co/cyJSYjf/witch-from-mercury-2.webp") !important; */
+}
+
+/* Liz to Aoi Tori */
+a.favourite[href*="anime/100178/"] {
+	background-image: url("https://i.ibb.co/DkFWQt1/liz-to-aoi-tori.jpg") !important;
+}
+
+/* Place Further than the Universe */
+a.favourite[href*="anime/99426/"] {
+	background-image: url("https://i.ibb.co/kxxpv40/place-further-than-the-universe.jpg") !important;
+}
+
+/* Lycoris Recoil */
+a.favourite[href*="anime/143270/"] {
+	background-image: url("https://i.ibb.co/tJvbxxK/lycoris-recoil.jpg") !important;
+}
