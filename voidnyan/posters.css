@@ -18,3 +18,8 @@ a.favourite[href*="anime/99426/"] {
 a.favourite[href*="anime/143270/"] {
 	background-image: url("https://i.ibb.co/tJvbxxK/lycoris-recoil.jpg") !important;
 }
+
+/* Adachi to Shimamura */
+a.favourite[href*="manga/92550"] {
+	background-image: url("https://i.ibb.co/hyVyzQY/adachi-to-shimamura.jpg") !important;
+}
