@@ -13,7 +13,6 @@
 .activity-feed-wrap blockquote::after {
 	display: inline-block;
 	color: rgb(var(--color-blue));
-	/* font-size: 20px; */
 }
 
 .activity-feed-wrap blockquote::before {
@@ -34,4 +33,56 @@
 
 .activity-feed-wrap :is(h1, h2, h3, h4, h5) > em {
 	color: rgb(var(--color-text)) !important;
+}
+
+.activity-feed-wrap .wrap,
+.activity-feed-wrap .reply {
+	background: unset !important;
+}
+
+.reply {
+	display: flex;
+	width: 100%;
+	gap: 20px;
+}
+
+.activity-replies {
+	margin-left: 0 !important;
+}
+
+.reply .header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-width: 70px;
+	max-width: 70px;
+}
+
+.reply .name {
+	margin-left: 0 !important;
+	word-wrap: break-word;
+	word-break: break-all;
+	text-align: center;
+}
+
+.reply .name::after {
+	content: unset !important;
+}
+
+.reply .name[href*="/tdbn"]::after {
+	content: "🐟🐠🐡" !important;
+	visibility: hidden;
+}
+
+.reply .reply-markdown {
+	flex-grow: 1;
+}
+
+.reply .reply-markdown :is(h1, h2, h3, h4, h5) {
+	padding-top: 12px;
+}
+
+.reply .avatar {
+	height: 50px;
+	width: 50px;
 }
