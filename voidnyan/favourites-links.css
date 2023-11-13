@@ -8,19 +8,27 @@
 	--first-column: 17px;
 	--second-column: calc(var(--first-column) + var(--width) + var(--gap));
 	--third-column: calc(
-		var(--first-column) + var(--width) * 2 + var(--gap) * 2
+		var(--second-column) + var(--width) + var(--gap) + 1px
 	);
-	--fourth-column: calc(
-		var(--first-column) + var(--width) * 3 + var(--gap) * 3
-	);
+	--fourth-column: calc(var(--third-column) + var(--width) + var(--gap));
 
-	--first-row: 63px;
+	--first-row: calc(63px + 95px);
 	--second-row: calc(var(--first-row) + var(--height) + var(--gap));
-	--third-row: calc(var(--first-row) + var(--height) * 2 + var(--gap) * 2);
+	--third-row: calc(var(--second-row) + var(--height) + var(--gap));
 
 	--first-row-manga: calc(var(--third-row) + var(--height) + 78px);
 
 	--first-row-ln: calc(var(--first-row-manga) + var(--height) + 78px);
+
+	--write-up: "write-up";
+}
+
+a.favourite {
+	z-index: 5;
+}
+
+a.favourite:hover {
+	z-index: 3;
 }
 
 @media screen and (min-width: 1041px) {
@@ -42,95 +50,122 @@
     a[href="https://anilist.co/activity/608168940"],
     a[href="https://anilist.co/activity/642777812"],
     a[href="https://anilist.co/activity/583686500"]
-    ) {
-		background: transparent;
-		height: 115px;
+    )::before {
+		background: rgba(20, 20, 20, 0.5);
+		height: 20px;
 		width: 85px;
 		z-index: 4;
 		position: absolute;
 		display: inline-block;
+		content: var(--write-up);
+		text-align: center;
+		font-size: 11px;
+		color: rgb(var(--color-text));
 	}
+}
 
-	/* Violet Evergarden */
-	.overview > .section > .about > .content-wrap > .markdown a[href="https://anilist.co/activity/610405847"]
-	{
-		transform: translate(var(--first-column), var(--first-row));
-	}
+.overview
+> .section
+> .about
+> .content-wrap
+> .markdown
+:is(a[href="https://anilist.co/activity/610405847"], 
+a[href="https://anilist.co/activity/601197334"], 
+a[href="https://anilist.co/activity/597768784"], 
+a[href="https://anilist.co/activity/633825455"],
+a[href="https://anilist.co/activity/587115804"],
+a[href="https://anilist.co/activity/624384142"],
+a[href="https://anilist.co/activity/590423440"],
+a[href="https://anilist.co/activity/589350095"],
+a[href="https://anilist.co/activity/636787807"],
+a[href="https://anilist.co/activity/600755370"],
+a[href="https://anilist.co/activity/608168940"],
+a[href="https://anilist.co/activity/642777812"],
+a[href="https://anilist.co/activity/583686500"]
+):hover::before {
+	z-index: 7;
+	color: rgb(var(--color-link));
+}
 
-	/* Liz to Aoi Tori */
-	.overview > .section > .about > .content-wrap > .markdown a[href="https://anilist.co/activity/601197334"]
-	{
-		transform: translate(calc(var(--second-column)), var(--first-row));
-	}
+/* Violet Evergarden */
+.overview > .section > .about > .content-wrap > .markdown a[href="https://anilist.co/activity/610405847"]::before
+{
+	transform: translate(var(--first-column), var(--first-row));
+}
 
-	/* A Place Further Than the Universe */
-	.overview > .section > .about > .content-wrap > .markdown a[href="https://anilist.co/activity/597768784"]
-	{
-		transform: translate(calc(var(--third-column)), var(--first-row));
-	}
+/* Liz to Aoi Tori */
+.overview > .section > .about > .content-wrap > .markdown a[href="https://anilist.co/activity/601197334"]::before
+{
+	transform: translate(calc(var(--second-column)), var(--first-row));
+}
 
-	/* Non Non Biyori */
-	.overview > .section > .about > .content-wrap > .markdown a[href="https://anilist.co/activity/633825455"]
-	{
-		transform: translate(calc(var(--first-column)), var(--second-row));
-	}
+/* A Place Further Than the Universe */
+.overview > .section > .about > .content-wrap > .markdown a[href="https://anilist.co/activity/597768784"]::before
+{
+	transform: translate(calc(var(--third-column)), var(--first-row));
+}
 
-	/* Lycoris Recoil */
-	.overview
+/* Non Non Biyori */
+.overview > .section > .about > .content-wrap > .markdown a[href="https://anilist.co/activity/633825455"]::before
+{
+	transform: translate(calc(var(--first-column)), var(--second-row));
+}
+
+/* Lycoris Recoil */
+.overview
 	> .section
 	> .about
 	> .content-wrap
 	> .markdown
-	a[href="https://anilist.co/activity/587115804"]
-	{
-		transform: translate(calc(var(--second-column)), var(--second-row));
-	}
+	a[href="https://anilist.co/activity/587115804"]::before
+{
+	transform: translate(calc(var(--second-column)), var(--second-row));
+}
 
-	/* ChihayaFuru */
-	.overview > .section > .about > .content-wrap > .markdown a[href="https://anilist.co/activity/624384142"]
-	{
-		transform: translate(var(--third-column), var(--second-row));
-	}
+/* ChihayaFuru */
+.overview > .section > .about > .content-wrap > .markdown a[href="https://anilist.co/activity/624384142"]::before
+{
+	transform: translate(var(--third-column), var(--second-row));
+}
 
-	/* Aria */
-	.overview > .section > .about > .content-wrap > .markdown a[href="https://anilist.co/activity/590423440"]
-	{
-		transform: translate(var(--fourth-column), var(--second-row));
-	}
+/* Aria */
+.overview > .section > .about > .content-wrap > .markdown a[href="https://anilist.co/activity/590423440"]::before
+{
+	transform: translate(var(--fourth-column), var(--second-row));
+}
 
-	/* Witch from Mercury */
-	.overview > .section > .about > .content-wrap > .markdown a[href="https://anilist.co/activity/589350095"]
-	{
-		transform: translate(var(--first-column), var(--third-row));
-	}
+/* Witch from Mercury */
+.overview > .section > .about > .content-wrap > .markdown a[href="https://anilist.co/activity/589350095"]::before
+{
+	transform: translate(var(--first-column), var(--third-row));
+}
 
-	/* Super Cub */
-	.overview > .section > .about > .content-wrap > .markdown a[href="https://anilist.co/activity/636787807"]
-	{
-		transform: translate(var(--second-column), var(--third-row));
-	}
+/* Super Cub */
+.overview > .section > .about > .content-wrap > .markdown a[href="https://anilist.co/activity/636787807"]::before
+{
+	transform: translate(var(--second-column), var(--third-row));
+}
 
-	/* Tropical Fish */
-	.overview > .section > .about > .content-wrap > .markdown a[href="https://anilist.co/activity/600755370"]
-	{
-		transform: translate(var(--second-column), var(--first-row-manga));
-	}
+/* Tropical Fish */
+.overview > .section > .about > .content-wrap > .markdown a[href="https://anilist.co/activity/600755370"]::before
+{
+	transform: translate(var(--second-column), var(--first-row-manga));
+}
 
-	/* Girls Last Tour */
-	.overview > .section > .about > .content-wrap > .markdown a[href="https://anilist.co/activity/608168940"]
-	{
-		transform: translate(var(--third-column), var(--first-row-manga));
-	}
+/* Girls Last Tour */
+.overview > .section > .about > .content-wrap > .markdown a[href="https://anilist.co/activity/608168940"]::before
+{
+	transform: translate(var(--third-column), var(--first-row-manga));
+}
 
-	/* Hirayasumi */
-	.overview > .section > .about > .content-wrap > .markdown a[href="https://anilist.co/activity/642777812"]
-	{
-		transform: translate(var(--fourth-column), var(--first-row-manga));
-	}
+/* Hirayasumi */
+.overview > .section > .about > .content-wrap > .markdown a[href="https://anilist.co/activity/642777812"]::before
+{
+	transform: translate(var(--fourth-column), var(--first-row-manga));
+}
 
-	/* Adachi to Shimamura */
-	.overview > .section > .about > .content-wrap > .markdown a[href="https://anilist.co/activity/583686500"]
-	{
-		transform: translate(var(--first-column), var(--first-row-ln));
-	}
+/* Adachi to Shimamura */
+.overview > .section > .about > .content-wrap > .markdown a[href="https://anilist.co/activity/583686500"]::before
+{
+	transform: translate(var(--first-column), var(--first-row-ln));
 }
