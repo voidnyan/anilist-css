@@ -119,13 +119,13 @@ a[href="https://anilist.co/activity/583686500"]
 	> .markdown
 	a[href="https://anilist.co/activity/587115804"]::before
 {
-	transform: translate(calc(var(--second-column)), var(--second-row));
+	transform: translate(calc(var(--third-column)), var(--second-row));
 }
 
 /* ChihayaFuru */
 .overview > .section > .about > .content-wrap > .markdown a[href="https://anilist.co/activity/624384142"]::before
 {
-	transform: translate(var(--third-column), var(--second-row));
+	transform: translate(var(--first-column), var(--third-row));
 }
 
 /* Aria */
@@ -137,13 +137,13 @@ a[href="https://anilist.co/activity/583686500"]
 /* Witch from Mercury */
 .overview > .section > .about > .content-wrap > .markdown a[href="https://anilist.co/activity/589350095"]::before
 {
-	transform: translate(var(--first-column), var(--third-row));
+	transform: translate(var(--second-column), var(--third-row));
 }
 
 /* Super Cub */
 .overview > .section > .about > .content-wrap > .markdown a[href="https://anilist.co/activity/636787807"]::before
 {
-	transform: translate(var(--second-column), var(--third-row));
+	transform: translate(var(--third-column), var(--third-row));
 }
 
 /* Tropical Fish */
