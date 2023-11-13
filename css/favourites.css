@@ -10,15 +10,17 @@
 	padding-top: 2px !important;
 	margin-bottom: -25px !important;
 }
-
-.tooltip {
-	background: rgba(23, 29, 34, 0.842) !important;
+body:has(.content > .overview, .content > .favourites) .tooltip .content {
+	display: none;
 }
 
 .tooltip .title {
-	background: unset !important;
+	text-transform: lowercase;
 }
 
-.tooltip .content {
-	display: none;
+body:has(.content > .overview, .content > .favourites)
+	.tooltip
+	.content:has(.circle) {
+	display: block;
+	text-transform: lowercase;
 }
