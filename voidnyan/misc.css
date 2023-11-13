@@ -1,0 +1,5 @@
+/* Remove Submissions-tab and reviews-tab */
+.nav-wrap a.link:nth-child(7),
+.nav-wrap a.link:nth-child(8) {
+	display: none;
+}

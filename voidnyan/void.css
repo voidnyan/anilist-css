@@ -1,0 +1,30 @@
+.nav-wrap a.link:nth-child(7) {
+	display: inline;
+	visibility: hidden;
+}
+
+.nav-wrap a.link:nth-child(7)::before {
+	content: "V̸̍͝O̴͐̚I̷̍͗D̴͌͝";
+	visibility: visible;
+}
+
+.no-reviews {
+	visibility: hidden;
+	position: relative;
+	margin-top: 60px;
+}
+
+.no-reviews::after {
+	content: "ｗ̵̛̪̟͕̭͕̜︠͛︢᷃ͮ︢͜͢͞ｅ̵᷿͔̗̦̟̰̜̭̔᷆͂̓᷄́ͭ́̑͌͢ｌ̶̨͖͚̯̘͆ͫ᷄̏᷉̓᷆̕͠ｃ̷̨̨̧᷊͚̟̝̟͖̆᷀̐ͣ̓̀ｏ̶͚̘̤͇͕͖̙͔᷈ͯͣ̉͂᷾̐ͯͯ͂͢ｍ̸̙̮̘᷊͕̺̠̮̫̻̈́̏̀᷾̍͘ｅ̵̡̼̖̲͚̜̠̉᷆͐᷇ͪ̄︡̋͟ ｔ̸̢̨̬̳ͧ︠̉᷇̾͋ͭ͟ｏ̴̨̞̳̮̲̭̟̪ͤ᷇̏᷃̏ͫ͌̐͠ ｔ̶̧᷿͕̩̦̖̻̱͇͒͂ͩ̑̍᷄̕͟͠ｈ̴̧̢̻̣̘̱̫̟︠ͨ̌︠᷄̿͜͞ｅ̴̡̼̪̝᷊̯͓̻̣᷀ͪ̄ͫ͛᷃̆͝ ｖ̶͚̰̤̣͕̤͈᷊̠̎ͬͩͦͦͦ͢͝ｏ̷̣̞̤̤͕̮̽̃̏ͪ̌ͣ︡ｉ̷̧̢̧̜̹᷊͈̜͔͎͋̔͒͑︠͌̀͂̚͠ｄ̵̨̯̮̭͈̫̍̏ͫ̀ͩͥ͝͡ ";
+	font-size: 40px;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 50%);
+	visibility: visible;
+	color: black;
+}
+
+body:has(.no-reviews) {
+	filter: invert(1);
+	overflow-x: hidden;
+}
