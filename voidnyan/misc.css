@@ -3,3 +3,7 @@
 .nav-wrap a.link:nth-child(8) {
 	display: none;
 }
+
+.tooltip > .title {
+	text-transform: lowercase;
+}

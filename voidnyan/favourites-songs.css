@@ -1,0 +1,271 @@
+:root {
+	--height-song: 115px;
+	--width-song: 85px;
+	--gap-song: 17px;
+
+	--first-column-song: 17px;
+	--second-column-song: calc(
+		var(--first-column-song) + var(--width-song) + var(--gap-song)
+	);
+	--third-column-song: calc(
+		var(--second-column-song) + var(--width-song) + var(--gap-song) + 1px
+	);
+	--fourth-column-song: calc(
+		var(--third-column-song) + var(--width-song) + var(--gap-song)
+	);
+
+	--first-row-song: 1290px;
+	--second-row-song: calc(
+		var(--first-row-song) + var(--height-song) + var(--gap-song) + 58px
+	);
+}
+@media screen and (min-width: 1041px) {
+	.overview
+> .section
+> .about
+> .content-wrap
+> .markdown :is(
+a[href="https://www.youtube.com/watch?v=oy2WTnhVT2w"],
+a[href="https://www.youtube.com/watch?v=aOKa-5AHCtU"],
+a[href="https://www.youtube.com/watch?v=jg09lNupc1s"],
+a[href="https://www.youtube.com/watch?v=lfw8W3uWO7s"],
+a[href="https://www.youtube.com/watch?v=ZHAnZTVF_10"],
+a[href="https://www.youtube.com/watch?v=Rq0NjgXSj0s"],
+a[href="https://www.youtube.com/watch?v=KTZ-y85Erus"],
+a[href="https://www.youtube.com/watch?v=vRPCAAUBMms"],
+) {
+		height: var(--height-song);
+		width: var(--width-song);
+		position: absolute;
+		display: inline-block;
+		border-radius: 4px;
+		background-size: cover;
+		text-transform: lowercase;
+	}
+
+	.overview
+> .section
+> .about
+> .content-wrap
+> .markdown :is(
+a[href="https://www.youtube.com/watch?v=oy2WTnhVT2w"],
+a[href="https://www.youtube.com/watch?v=aOKa-5AHCtU"],
+a[href="https://www.youtube.com/watch?v=jg09lNupc1s"],
+a[href="https://www.youtube.com/watch?v=lfw8W3uWO7s"],
+a[href="https://www.youtube.com/watch?v=ZHAnZTVF_10"],
+a[href="https://www.youtube.com/watch?v=Rq0NjgXSj0s"],
+a[href="https://www.youtube.com/watch?v=KTZ-y85Erus"],
+a[href="https://www.youtube.com/watch?v=vRPCAAUBMms"],
+):hover::after {
+		display: inline-block;
+		word-break: keep-all;
+		line-break: strict;
+		width: max-content;
+		background: rgba(20, 20, 20, 0.85);
+		border-radius: 4px;
+		left: 50%;
+		transform: translateX(-50%);
+		position: absolute;
+		top: -35px;
+		padding: 4px;
+		color: rgb(var(--color-text));
+		font-family: Overpass, -apple-system, BlinkMacSystemFont, Segoe UI,
+			Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+			sans-serif;
+	}
+
+	/* Songs - other*/
+
+	/* Ado - Eien No Akuruhi */
+	.overview
+> .section
+> .about
+> .content-wrap
+> .markdown a[href="https://www.youtube.com/watch?v=ZHAnZTVF_10"]
+	{
+		transform: translate(var(--first-column-song), var(--first-row-song));
+		background-image: url(https://i.ibb.co/KVyv1hx/ado-Eien-No-Akuruhi.jpg);
+	}
+
+	.overview
+> .section
+> .about
+> .content-wrap
+> .markdown a[href="https://www.youtube.com/watch?v=ZHAnZTVF_10"]:hover::after
+	{
+		content: "Eien No Akuruhi";
+	}
+
+	.overview
+> .section
+> .about
+> .content-wrap
+> .markdown :is(a[href="https://www.youtube.com/watch?v=ZHAnZTVF_10"], a[href="https://www.youtube.com/watch?v=oy2WTnhVT2w"])::before
+	{
+		content: "songs - other";
+		position: absolute;
+		top: -32px;
+		left: -5px;
+		overflow: visible;
+		word-break: keep-all;
+		color: rgb(var(--color-text)) !important;
+		width: 100px;
+		font-size: 1.4rem;
+		font-style: italic;
+		font-weight: 700;
+		font-family: Overpass, -apple-system, BlinkMacSystemFont, Segoe UI,
+			Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+			sans-serif;
+	}
+
+	/* Wanuka - Tipsy */
+	.overview
+> .section
+> .about
+> .content-wrap
+> .markdown a[href="https://www.youtube.com/watch?v=Rq0NjgXSj0s"]
+	{
+		transform: translate(var(--second-column-song), var(--first-row-song));
+		background-image: url(https://i.ibb.co/G7F4nbF/wanuka-tipsy.jpg);
+	}
+
+	.overview
+> .section
+> .about
+> .content-wrap
+> .markdown a[href="https://www.youtube.com/watch?v=Rq0NjgXSj0s"]:hover::after
+	{
+		content: "Tipsy";
+	}
+
+	/* Yorushika - That's why I gave up on music */
+	.overview
+> .section
+> .about
+> .content-wrap
+> .markdown a[href="https://www.youtube.com/watch?v=KTZ-y85Erus"]
+	{
+		transform: translate(var(--third-column-song), var(--first-row-song));
+		background-image: url(https://i.ibb.co/xsdGHrp/yorushika-that-s-why-i-gave-up-on-music.jpg);
+	}
+
+	.overview
+> .section
+> .about
+> .content-wrap
+> .markdown a[href="https://www.youtube.com/watch?v=KTZ-y85Erus"]:hover::after
+	{
+		content: "That's Why I Gave Up on Music";
+	}
+
+	/* Eve - Shinkai */
+	.overview
+> .section
+> .about
+> .content-wrap
+> .markdown a[href="https://www.youtube.com/watch?v=vRPCAAUBMms"]
+	{
+		transform: translate(var(--fourth-column-song), var(--first-row-song));
+		background-image: url(https://i.ibb.co/Q65QJhn/eve-shinkai.jpg);
+	}
+
+	.overview
+> .section
+> .about
+> .content-wrap
+> .markdown a[href="https://www.youtube.com/watch?v=vRPCAAUBMms"]:hover::after
+	{
+		content: "Shinkai";
+	}
+
+	/* Songs - Ado */
+
+	/* Ado - Ibara */
+	.overview
+> .section
+> .about
+> .content-wrap
+> .markdown a[href="https://www.youtube.com/watch?v=oy2WTnhVT2w"]
+	{
+		transform: translate(var(--first-column-song), var(--second-row-song));
+		background-image: url(https://i.ibb.co/jVpGt1J/ado-ibara.jpg);
+	}
+
+	.overview
+> .section
+> .about
+> .content-wrap
+> .markdown a[href="https://www.youtube.com/watch?v=oy2WTnhVT2w"]:hover::after
+	{
+		content: "Ibara";
+	}
+
+	.overview
+> .section
+> .about
+> .content-wrap
+> .markdown a[href="https://www.youtube.com/watch?v=oy2WTnhVT2w"]::before
+	{
+		content: "songs - ado";
+	}
+
+	/* Ado - Himarawri */
+	.overview
+> .section
+> .about
+> .content-wrap
+> .markdown a[href="https://www.youtube.com/watch?v=aOKa-5AHCtU"]
+	{
+		transform: translate(var(--second-column-song), var(--second-row-song));
+		background-image: url(https://i.ibb.co/jrfHjQ0/ado-himawari.jpg);
+	}
+
+	.overview
+> .section
+> .about
+> .content-wrap
+> .markdown a[href="https://www.youtube.com/watch?v=aOKa-5AHCtU"]:hover::after
+	{
+		content: "Himawari";
+	}
+
+	/* Ado - Readymade */
+	.overview
+> .section
+> .about
+> .content-wrap
+> .markdown a[href="https://www.youtube.com/watch?v=jg09lNupc1s"]
+	{
+		transform: translate(var(--third-column-song), var(--second-row-song));
+		background-image: url(https://i.ibb.co/WW7RLwG/ado-readymade.jpg);
+	}
+
+	.overview
+> .section
+> .about
+> .content-wrap
+> .markdown a[href="https://www.youtube.com/watch?v=jg09lNupc1s"]:hover::after
+	{
+		content: "Readymade";
+	}
+
+	/* Ado - All Night Radio */
+	.overview
+> .section
+> .about
+> .content-wrap
+> .markdown a[href="https://www.youtube.com/watch?v=lfw8W3uWO7s"]
+	{
+		transform: translate(var(--fourth-column-song), var(--second-row-song));
+		background-image: url(https://i.ibb.co/pdZYFnX/ado-all-night-radio.jpg);
+	}
+
+	.overview
+> .section
+> .about
+> .content-wrap
+> .markdown a[href="https://www.youtube.com/watch?v=lfw8W3uWO7s"]:hover::after
+	{
+		content: "All Night Radio";
+	}
+}
