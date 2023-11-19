@@ -69,11 +69,6 @@
 	content: unset !important;
 }
 
-.reply .name[href*="/tdbn"]::after {
-	content: "🐟🐠🐡" !important;
-	visibility: hidden;
-}
-
 .reply .reply-markdown {
 	flex-grow: 1;
 }
