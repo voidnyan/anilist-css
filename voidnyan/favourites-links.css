@@ -42,7 +42,6 @@ a.favourite:hover {
     a[href="https://anilist.co/activity/587115804"],
     a[href="https://anilist.co/activity/624384142"],
     a[href="https://anilist.co/activity/590423440"],
-    a[href="https://anilist.co/activity/589350095"],
     a[href="https://anilist.co/activity/636787807"],
     a[href="https://anilist.co/activity/600755370"],
     a[href="https://anilist.co/activity/608168940"],
@@ -74,7 +73,6 @@ a[href="https://anilist.co/activity/633825455"],
 a[href="https://anilist.co/activity/587115804"],
 a[href="https://anilist.co/activity/624384142"],
 a[href="https://anilist.co/activity/590423440"],
-a[href="https://anilist.co/activity/589350095"],
 a[href="https://anilist.co/activity/636787807"],
 a[href="https://anilist.co/activity/600755370"],
 a[href="https://anilist.co/activity/608168940"],
@@ -132,16 +130,10 @@ a[href="https://anilist.co/activity/583686500"]
 	transform: translate(var(--fourth-column), var(--second-row));
 }
 
-/* Witch from Mercury */
-.overview > .section > .about > .content-wrap > .markdown a[href="https://anilist.co/activity/589350095"]::before
-{
-	transform: translate(var(--second-column), var(--third-row));
-}
-
 /* Super Cub */
 .overview > .section > .about > .content-wrap > .markdown a[href="https://anilist.co/activity/636787807"]::before
 {
-	transform: translate(var(--third-column), var(--third-row));
+	transform: translate(var(--second-column), var(--third-row));
 }
 
 /* Tropical Fish */
