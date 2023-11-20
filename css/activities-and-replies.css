@@ -1,29 +1,29 @@
-.activity-feed-wrap blockquote {
+:is(.activity-entry, .reply) blockquote {
 	border-left: solid 5px rgb(var(--color-blue));
 	background: unset;
 	padding-top: 3px;
 	padding-bottom: 3px;
 }
 
-.activity-feed-wrap blockquote p {
+:is(.activity-entry, .reply) blockquote p {
 	display: inline;
 }
 
-.activity-feed-wrap blockquote::before,
-.activity-feed-wrap blockquote::after {
+:is(.activity-entry, .reply) blockquote::before,
+:is(.activity-entry, .reply) blockquote::after {
 	display: inline-block;
 	color: rgb(var(--color-blue));
 }
 
-.activity-feed-wrap blockquote::before {
+:is(.activity-entry, .reply) blockquote::before {
 	content: "❝ ";
 }
 
-.activity-feed-wrap blockquote::after {
+:is(.activity-entry, .reply) blockquote::after {
 	content: " ❞";
 }
 
-.activity-feed-wrap :is(strong, em) {
+:is(.activity-entry, .reply) :is(strong, em) {
 	color: color-mix(
 		in srgb,
 		rgb(var(--color-blue)) 50%,
@@ -31,12 +31,12 @@
 	);
 }
 
-.activity-feed-wrap :is(h1, h2, h3, h4, h5) > em {
+:is(.activity-entry, .reply) :is(h1, h2, h3, h4, h5) > em {
 	color: rgb(var(--color-text)) !important;
 }
 
-.activity-feed-wrap .wrap,
-.activity-feed-wrap .reply {
+:is(.activity-entry, .reply) .wrap,
+.reply {
 	background: unset !important;
 }
 
@@ -71,10 +71,6 @@
 
 .reply .reply-markdown {
 	flex-grow: 1;
-}
-
-.reply .reply-markdown :is(h1, h2, h3, h4, h5) {
-	padding-top: 12px;
 }
 
 .reply .avatar {
