@@ -5,11 +5,11 @@
 
 .follow-card {
 	position: relative;
+	background: unset !important;
 }
 
 .follow-card .avatar .name,
 .user-follow.hohSocialContent .avatar .name {
-	background: unset !important;
 	opacity: 1 !important;
 	height: calc(100% + 35px) !important;
 	position: absolute;

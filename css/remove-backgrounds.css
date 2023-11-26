@@ -2,8 +2,16 @@
 :is(.activity-entry, .reply) .wrap,
 .reply,
 .time:hover,
-.favourites.preview .favourites-wrap,
+.favourites-wrap,
 .stats-wrap .content-wrap,
-.stats-wrap .footer {
+.stats-wrap .footer,
+.list-section,
+.bar-chart-wrap,
+.pie-chart .x-axis {
 	background: unset !important;
+}
+
+.bar-chart-wrap,
+.pie-chart {
+	box-shadow: unset !important;
 }
