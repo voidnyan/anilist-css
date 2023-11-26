@@ -7,7 +7,8 @@
 .stats-wrap .footer,
 .list-section,
 .bar-chart-wrap,
-.pie-chart .x-axis {
+.pie-chart,
+.x-axis {
 	background: unset !important;
 }
 
