@@ -25,20 +25,11 @@
 	padding: 22px 7px 15px 7px !important;
 }
 
-.stats-wrap .content-wrap,
-.stats-wrap .footer {
-	background: unset !important;
-}
-
 .list-stats.content-wrap {
-	/* height: calc(160.5px - 35px); */
-	/* transition: all 1s; */
 	margin-bottom: 0px !important;
 }
 
 .stats-wrap .footer {
-	/* opacity: 0%;
-	transition: all 1s; */
 	height: 35px;
 }
 

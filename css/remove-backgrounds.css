@@ -1,0 +1,9 @@
+.about .content-wrap,
+:is(.activity-entry, .reply) .wrap,
+.reply,
+.time:hover,
+.favourites.preview .favourites-wrap,
+.stats-wrap .content-wrap,
+.stats-wrap .footer {
+	background: unset !important;
+}

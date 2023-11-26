@@ -35,11 +35,6 @@
 	color: rgb(var(--color-text)) !important;
 }
 
-:is(.activity-entry, .reply) .wrap,
-.reply {
-	background: unset !important;
-}
-
 .reply {
 	display: flex;
 	width: 100%;
@@ -76,8 +71,4 @@
 .reply .avatar {
 	height: 50px;
 	width: 50px;
-}
-
-.time:hover {
-	background: unset !important;
 }
