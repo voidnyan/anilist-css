@@ -8,7 +8,9 @@
 .list-section,
 .bar-chart-wrap,
 .pie-chart,
-.x-axis {
+.x-axis,
+.line-chart-wrap,
+.horizontal-scroller {
 	background: unset !important;
 }
 
