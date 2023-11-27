@@ -43,3 +43,20 @@
 	margin-left: 5% !important;
 	width: 90% !important;
 }
+
+.pie-chart {
+	height: auto;
+	padding: 22px;
+}
+
+.pie-chart .wrap {
+	grid-gap: 22px;
+	grid-template-columns: 1fr;
+	height: auto;
+	margin-top: 22px;
+	padding-left: 0;
+}
+
+.pie-chart .pie-chart-wrap {
+	text-align: center;
+}
