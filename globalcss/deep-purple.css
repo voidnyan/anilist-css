@@ -1,0 +1,33 @@
+:root,
+.site-theme-contrast,
+.site-theme-dark {
+	--color-blue: 110, 40, 240;
+	--color-blue-dim: 60, 40, 250;
+	--color-nav-background: 35, 30, 50; /* top navbar background */
+	--color-nav-text: 255, 255, 255; /* top navbar text */
+	--color-background: 20, 20, 30; /* background */
+	--color-foreground: 10, 10, 10, 0.35; /* foreground */
+	--color-foreground-grey: 10, 10, 10; /* statswrap footer background */
+	--color-foreground-grey-dark: 6, 12, 19; /* statswrap progress bar background, activity history empty field background */
+	--color-text: 255, 255, 255; /* plain text, header, statswrap progressbar number indicators */
+	--color-text-light: 255, 255, 255; /* genre and statswrap text, secondary navbar links */
+	--color-text-lighter: 255, 255, 255; /* filter text, time stamp text and icons */
+	--color-shadow-blue: 0, 5, 15; /* popup/dropdown menu shadow */
+	--color-background-300: 30, 42, 56; /* statspage graph footer background */
+	--color-background-200: 35, 30, 55; /* navdropdown footer background */
+	--color-background-100: 35, 30, 50; /* navdropdown background */
+	--color-gray-900: 201, 215, 227; /* navdropdown footer text and icon hover */
+	--color-gray-800: 173, 192, 210; /* navdropdown primary text, text and icon hover */
+	--color-gray-700: 139, 160, 178; /* navdropdown footer text and icons */
+	--color-gray-600: 116, 136, 153; /* navdropdown secondary text and icons */
+	--color-gray-300: 30, 42, 56; /* statspage curved graph fill color */
+	--color-gray-100: 21, 31, 46; /* navdropdown little arrow thing */
+}
+
+.nav-unscoped {
+	background: rgb(var(--color-nav-background)) !important;
+}
+
+.nav-unscoped a {
+	color: rgb(var(--color-text)) !important;
+}
