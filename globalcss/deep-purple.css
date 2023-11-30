@@ -1,3 +1,6 @@
+@import url("https://voidnyan.github.io/anilist-css/css/social.css");
+@import url("https://voidnyan.github.io/anilist-css/css/activities-and-replies.css?v=6");
+
 :root,
 .site-theme-contrast,
 .site-theme-dark {
@@ -30,4 +33,9 @@
 
 .nav-unscoped a {
 	color: rgb(var(--color-text)) !important;
+}
+
+.logo img {
+	content: url('data:image/svg+xml,<%3Fxml version="1.0" encoding="UTF-8" standalone="no"%3F><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 361 273"><defs><style> .cls-1 { fill: %23fefefe; } .cls-1, .cls-2 { stroke-width: 0px; } .cls-2 { fill: rgb(110, 40, 240); } </style></defs><path class="cls-2" d="m246.92,203.27V16.6c0-10.7-5.89-16.6-16.56-16.6h-36.43c-10.67,0-16.56,5.9-16.56,16.6v88.65c0,2.5,24,14.09,24.62,16.54,18.28,71.61,3.97,128.92-13.36,131.6,28.34,1.4,31.45,15.06,10.35,5.73,3.23-38.21,15.83-38.13,52.05-1.41.31.32,7.43,15.28,7.87,15.28h85.54c10.67,0,16.56-5.9,16.56-16.6v-36.52c0-10.7-5.89-16.6-16.56-16.6h-97.52Z" /><path class="cls-1" d="m95.68,0L0,273h74.34l16.19-47.22h80.96l15.83,47.22h73.97L165.97,0h-70.29Zm11.78,165.28l23.18-75.63,25.39,75.63h-48.58Z" /></svg>');
+	padding: 6px;
 }
