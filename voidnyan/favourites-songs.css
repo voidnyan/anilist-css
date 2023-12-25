@@ -30,9 +30,9 @@ a[href="https://www.youtube.com/watch?v=aOKa-5AHCtU"],
 a[href="https://www.youtube.com/watch?v=jg09lNupc1s"],
 a[href="https://www.youtube.com/watch?v=lfw8W3uWO7s"],
 a[href="https://www.youtube.com/watch?v=ZHAnZTVF_10"],
-a[href="https://www.youtube.com/watch?v=Rq0NjgXSj0s"],
 a[href="https://www.youtube.com/watch?v=KTZ-y85Erus"],
 a[href="https://www.youtube.com/watch?v=vRPCAAUBMms"],
+a[href="https://www.youtube.com/watch?v=EkhCC0csnxU"],
 ) {
 		height: var(--height-song);
 		width: var(--width-song);
@@ -53,9 +53,9 @@ a[href="https://www.youtube.com/watch?v=aOKa-5AHCtU"],
 a[href="https://www.youtube.com/watch?v=jg09lNupc1s"],
 a[href="https://www.youtube.com/watch?v=lfw8W3uWO7s"],
 a[href="https://www.youtube.com/watch?v=ZHAnZTVF_10"],
-a[href="https://www.youtube.com/watch?v=Rq0NjgXSj0s"],
 a[href="https://www.youtube.com/watch?v=KTZ-y85Erus"],
 a[href="https://www.youtube.com/watch?v=vRPCAAUBMms"],
+a[href="https://www.youtube.com/watch?v=EkhCC0csnxU"],
 ):hover::after {
 		display: inline-block;
 		word-break: keep-all;
@@ -118,24 +118,24 @@ a[href="https://www.youtube.com/watch?v=vRPCAAUBMms"],
 			sans-serif;
 	}
 
-	/* Wanuka - Tipsy */
+	/* Kankan - suima */
 	.overview
 > .section
 > .about
 > .content-wrap
-> .markdown a[href="https://www.youtube.com/watch?v=Rq0NjgXSj0s"]
+> .markdown a[href="https://www.youtube.com/watch?v=EkhCC0csnxU"]
 	{
 		transform: translate(var(--second-column-song), var(--first-row-song));
-		background-image: url(https://i.ibb.co/G7F4nbF/wanuka-tipsy.jpg);
+		background-image: url(https://i.imgur.com/64NGnMW.jpg);
 	}
 
 	.overview
 > .section
 > .about
 > .content-wrap
-> .markdown a[href="https://www.youtube.com/watch?v=Rq0NjgXSj0s"]:hover::after
+> .markdown a[href="https://www.youtube.com/watch?v=EkhCC0csnxU"]:hover::after
 	{
-		content: "Tipsy";
+		content: "suima";
 	}
 
 	/* Yorushika - That's why I gave up on music */

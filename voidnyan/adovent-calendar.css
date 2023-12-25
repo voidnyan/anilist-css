@@ -1,0 +1,602 @@
+@import url("https://voidnyan.github.io/anilist-css/css/about.css");
+@import url("https://voidnyan.github.io/anilist-css/css/activity-feed.css");
+@import url("https://voidnyan.github.io/anilist-css/css/badges.css");
+@import url("https://voidnyan.github.io/anilist-css/css/misc.css");
+@import url("https://voidnyan.github.io/anilist-css/css/stats-wrap.css");
+@import url("https://voidnyan.github.io/anilist-css/css/width-reset.css");
+@import url("https://voidnyan.github.io/anilist-css/css/social.css");
+@import url("https://voidnyan.github.io/anilist-css/css/follower-badge.css");
+@import url("https://voidnyan.github.io/anilist-css/css/activities-and-replies.css?v=6");
+@import url("https://voidnyan.github.io/anilist-css/voidnyan/misc.css?v=4");
+@import url("https://voidnyan.github.io/anilist-css/css/remove-backgrounds.css");
+
+:root {
+	--nav-symbol: "☆";
+	--follower-badge-text: "loves you";
+	--color-logo: #96cbdb;
+}
+
+.overview
+> .section
+> .about
+> .content-wrap
+> .markdown p:has(a[href="https://greasyfork.org/en/scripts/475531-voidverified"])
+{
+	display: none;
+}
+
+.container:has(> .activity-entry) {
+	display: flex;
+	justify-content: center;
+}
+
+.name-wrapper .name {
+	text-shadow: 1px 1px 2px rgb(var(--color-blue));
+}
+
+body {
+	background-image: url(https://i.imgur.com/cOJdZ52.png);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+/* Banner */
+.banner {
+	visibility: hidden;
+}
+.banner > .container {
+	visibility: visible;
+}
+
+.nav.container {
+	background: rgba(10, 10, 10, 0.95);
+	border-radius: 6px 6px 0px 0px;
+}
+.content.container,
+.container > .activity-entry .wrap,
+.container > .activity-entry .reply {
+	background: rgba(10, 10, 10, 0.7) !important;
+}
+
+.content.container > div {
+	margin-top: 0 !important;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+/* NAV v2 */
+/* Main nav */
+#nav.nav {
+	background-color: rgba(var(--color-background), 0.5);
+	transition: all 0.8s ease 0s, top 0.5s ease 0s !important;
+}
+
+#nav.nav:hover {
+	opacity: 1;
+}
+
+.nav-wrap {
+	background: unset !important;
+	user-select: none;
+}
+
+.nav > .link {
+	position: relative;
+}
+
+.nav > .link::after {
+	content: var(--nav-symbol);
+	font-style: normal;
+	position: absolute;
+	right: -5px;
+	opacity: 0;
+	transition: all 0.2s ease-in-out;
+}
+
+.nav > .router-link-active::after,
+.nav > .link:hover::after {
+	opacity: 1;
+	right: 0px;
+}
+
+.nav > .router-link-active {
+	background: unset !important;
+}
+
+.nav-wrap a {
+	text-transform: lowercase;
+	font-style: italic;
+	letter-spacing: 1px;
+}
+
+:root,
+.site-theme-contrast,
+.site-theme-dark {
+	--color-nav-background: 21, 34, 50; /* top navbar background */
+	--color-nav-text: 160, 177, 197; /* top navbar text */
+	--color-background: 11, 22, 34; /* background */
+	--color-foreground: 10, 10, 10, 0.35; /* foreground */
+	--color-foreground-grey: 15, 22, 31; /* statswrap footer background */
+	--color-foreground-grey-dark: 6, 12, 19; /* statswrap progress bar background, activity history empty field background */
+	--color-text: 255, 255, 255; /* plain text, header, statswrap progressbar number indicators */
+	--color-text-light: 255, 255, 255; /* genre and statswrap text, secondary navbar links */
+	--color-text-lighter: 255, 255, 255; /* filter text, time stamp text and icons */
+	--color-shadow-blue: 0, 5, 15; /* popup/dropdown menu shadow */
+	--color-background-300: 30, 42, 56; /* statspage graph footer background */
+	--color-background-200: 11, 22, 34; /* navdropdown footer background */
+	--color-background-100: 21, 31, 46; /* navdropdown background */
+	--color-gray-900: 201, 215, 227; /* navdropdown footer text and icon hover */
+	--color-gray-800: 173, 192, 210; /* navdropdown primary text, text and icon hover */
+	--color-gray-700: 139, 160, 178; /* navdropdown footer text and icons */
+	--color-gray-600: 116, 136, 153; /* navdropdown secondary text and icons */
+	--color-gray-300: 30, 42, 56; /* statspage curved graph fill color */
+	--color-gray-100: 21, 31, 46; /* navdropdown little arrow thing */
+}
+
+.logo img {
+	content: url('data:image/svg+xml,<%3Fxml version="1.0" encoding="UTF-8" standalone="no"%3F><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 361 273"><defs><style> .cls-1 { fill: %23fefefe; } .cls-1, .cls-2 { stroke-width: 0px; } .cls-2 { fill: %23bbbbd3; } </style></defs><path class="cls-2" d="m246.92,203.27V16.6c0-10.7-5.89-16.6-16.56-16.6h-36.43c-10.67,0-16.56,5.9-16.56,16.6v88.65c0,2.5,24,14.09,24.62,16.54,18.28,71.61,3.97,128.92-13.36,131.6,28.34,1.4,31.45,15.06,10.35,5.73,3.23-38.21,15.83-38.13,52.05-1.41.31.32,7.43,15.28,7.87,15.28h85.54c10.67,0,16.56-5.9,16.56-16.6v-36.52c0-10.7-5.89-16.6-16.56-16.6h-97.52Z" /><path class="cls-1" d="m95.68,0L0,273h74.34l16.19-47.22h80.96l15.83,47.22h73.97L165.97,0h-70.29Zm11.78,165.28l23.18-75.63,25.39,75.63h-48.58Z" /></svg>');
+	padding: 6px;
+}
+
+.overview
+	> .section:first-child
+	> :is(
+		div:nth-child(4),
+		div:nth-child(5),
+		div:nth-child(6),
+		div:nth-child(7)
+	) {
+	visibility: hidden;
+}
+
+:root {
+	--height-song: 115px;
+	--width-song: 85px;
+	--gap-song: 17px;
+
+	--first-column-song: 17px;
+	--second-column-song: calc(
+		var(--first-column-song) + var(--width-song) + var(--gap-song)
+	);
+	--third-column-song: calc(
+		var(--second-column-song) + var(--width-song) + var(--gap-song) + 1px
+	);
+	--fourth-column-song: calc(
+		var(--third-column-song) + var(--width-song) + var(--gap-song)
+	);
+
+	--first-row-song: 50px;
+	--second-row-song: calc(
+		var(--first-row-song) + var(--height-song) + var(--gap-song)
+	);
+	--third-row-song: calc(
+		var(--second-row-song) + var(--height-song) + var(--gap-song)
+	);
+	--fourth-row-song: calc(
+		var(--third-row-song) + var(--height-song) + var(--gap-song)
+	);
+	--fifth-row-song: calc(
+		var(--fourth-row-song) + var(--height-song) + var(--gap-song)
+	);
+	--sixth-row-song: calc(
+		var(--fifth-row-song) + var(--height-song) + var(--gap-song)
+	);
+}
+
+@media screen and (min-width: 1041px) {
+	.overview
+		> .section
+		> .about
+		> .content-wrap
+		> .markdown
+		:is(
+			a[href="https://www.youtube.com/watch?v=Qp3b-RXtz4w"],
+			a[href="https://www.youtube.com/watch?v=aOKa-5AHCtU"],
+			a[href="https://www.youtube.com/watch?v=gt-v_YCkaMY"],
+            a[href="https://www.youtube.com/watch?v=Baw-cAvS5xc"],
+            a[href="https://www.youtube.com/watch?v=lfw8W3uWO7s"],
+            a[href="https://www.youtube.com/watch?v=jTVSU-Lr1ew"],
+            a[href="https://www.youtube.com/watch?v=VQtmqpSE64w"],
+            a[href="https://www.youtube.com/watch?v=BMb5IetESGE"],
+            a[href="https://www.youtube.com/watch?v=W_fHWaoQwkw"],
+            a[href="https://www.youtube.com/watch?v=_wZfYtYwxro"],
+            a[href="https://www.youtube.com/watch?v=pgXpM4l_MwI"],
+            a[href="https://www.youtube.com/watch?v=ZHAnZTVF_10"],
+            a[href="https://www.youtube.com/watch?v=eZuDklxsaRg"],
+            a[href="https://www.youtube.com/watch?v=Q9X0J_tLHwY"],
+            a[href="https://www.youtube.com/watch?v=jg09lNupc1s"],
+            a[href="https://www.youtube.com/watch?v=cyq5-StPISU"],
+            a[href="https://www.youtube.com/watch?v=lZGo8jcEW2M"],
+            a[href="https://www.youtube.com/watch?v=YnSW8ian29w"],
+            a[href="https://www.youtube.com/watch?v=iL7uoLCbJoc"],
+            a[href="https://www.youtube.com/watch?v=sOiMD45QGLs"],
+            a[href="https://www.youtube.com/watch?v=V9_ZpqfqHFI"],
+            a[href="https://www.youtube.com/watch?v=oy2WTnhVT2w"],
+            a[href="https://www.youtube.com/watch?v=bSHe6T5iB2M"],
+            a[href="https://www.youtube.com/watch?v=nuvNgt60km4"],
+            b[href="door"]
+		) {
+		height: 115px;
+		width: 85px;
+		background-image: url(https://i.ibb.co/B4gf2SJ/door-v2.jpg);
+		position: absolute;
+		display: inline-block;
+		border-radius: 4px;
+		background-size: cover;
+		text-transform: lowercase;
+	}
+
+	.overview
+		> .section
+		> .about
+		> .content-wrap
+		> .markdown
+		:is(b[href="door"], b[href="day-24"])::before {
+		position: absolute;
+		color: #9f5529;
+		-webkit-text-stroke: 2px rgb(231, 231, 231);
+		font-size: 3.7rem;
+		font-weight: 700;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.overview
+    > .section
+    > .about
+    > .content-wrap
+    > .markdown :is(
+        a[href="https://www.youtube.com/watch?v=Qp3b-RXtz4w"],
+        a[href="https://www.youtube.com/watch?v=aOKa-5AHCtU"],
+        a[href="https://www.youtube.com/watch?v=gt-v_YCkaMY"],
+        a[href="https://www.youtube.com/watch?v=Baw-cAvS5xc"],
+        a[href="https://www.youtube.com/watch?v=lfw8W3uWO7s"],
+        a[href="https://www.youtube.com/watch?v=jTVSU-Lr1ew"],
+        a[href="https://www.youtube.com/watch?v=VQtmqpSE64w"],
+        a[href="https://www.youtube.com/watch?v=BMb5IetESGE"],
+        a[href="https://www.youtube.com/watch?v=W_fHWaoQwkw"],
+        a[href="https://www.youtube.com/watch?v=_wZfYtYwxro"],
+        a[href="https://www.youtube.com/watch?v=pgXpM4l_MwI"],
+        a[href="https://www.youtube.com/watch?v=ZHAnZTVF_10"],
+        a[href="https://www.youtube.com/watch?v=eZuDklxsaRg"],
+        a[href="https://www.youtube.com/watch?v=Q9X0J_tLHwY"],
+        a[href="https://www.youtube.com/watch?v=jg09lNupc1s"],
+        a[href="https://www.youtube.com/watch?v=cyq5-StPISU"],
+        a[href="https://www.youtube.com/watch?v=lZGo8jcEW2M"],
+        a[href="https://www.youtube.com/watch?v=YnSW8ian29w"],
+        a[href="https://www.youtube.com/watch?v=iL7uoLCbJoc"],
+        a[href="https://www.youtube.com/watch?v=sOiMD45QGLs"],
+        a[href="https://www.youtube.com/watch?v=V9_ZpqfqHFI"],
+        a[href="https://www.youtube.com/watch?v=oy2WTnhVT2w"],
+        a[href="https://www.youtube.com/watch?v=bSHe6T5iB2M"],
+        a[href="https://www.youtube.com/watch?v=nuvNgt60km4"]
+    ):hover::after {
+		text-transform: lowercase;
+		display: inline-block;
+		word-break: keep-all;
+		line-break: strict;
+		width: max-content;
+		background: rgba(20, 20, 20, 0.85);
+		border-radius: 4px;
+		left: 50%;
+		transform: translateX(-50%);
+		position: absolute;
+		top: -35px;
+		padding: 3px 6px;
+		color: rgb(var(--color-text));
+		font-family: Overpass, -apple-system, BlinkMacSystemFont, Segoe UI,
+			Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+			sans-serif;
+	}
+
+	.overview > .section > .about > .content-wrap > .markdown a[href="https://www.youtube.com/watch?v=Qp3b-RXtz4w"]
+	{
+		transform: translate(var(--first-column-song), var(--first-row-song));
+		background-image: url(https://i.ibb.co/n8zf4bf/day-01.jpg);
+	}
+
+	.overview > .section > .about > .content-wrap > .markdown a[href="https://www.youtube.com/watch?v=Qp3b-RXtz4w"]:hover::after
+	{
+		content: "Usseewa";
+	}
+
+	.overview > .section > .about > .content-wrap > .markdown a[href="https://www.youtube.com/watch?v=aOKa-5AHCtU"]
+	{
+		transform: translate(var(--second-column-song), var(--first-row-song));
+		background-image: url(https://i.ibb.co/9yrXmBk/himawari.jpg);
+	}
+
+	.overview > .section > .about > .content-wrap > .markdown a[href="https://www.youtube.com/watch?v=aOKa-5AHCtU"]:hover::after
+	{
+		content: "Himawari";
+	}
+
+	.overview > .section > .about > .content-wrap > .markdown a[href="https://www.youtube.com/watch?v=gt-v_YCkaMY"]
+	{
+		transform: translate(var(--third-column-song), var(--first-row-song));
+		background-image: url(https://i.ibb.co/GTJrt29/backlight.jpg);
+	}
+
+	.overview > .section > .about > .content-wrap > .markdown a[href="https://www.youtube.com/watch?v=gt-v_YCkaMY"]:hover::after
+	{
+		content: "Backlight";
+	}
+
+	.overview > .section > .about > .content-wrap > .markdown a[href="https://www.youtube.com/watch?v=Baw-cAvS5xc"]
+	{
+		transform: translate(var(--fourth-column-song), var(--first-row-song));
+		background-image: url(https://i.ibb.co/qdMsGwZ/osmanthus.jpg);
+	}
+
+	.overview > .section > .about > .content-wrap > .markdown a[href="https://www.youtube.com/watch?v=Baw-cAvS5xc"]:hover::after
+	{
+		content: "Kinmokusei / Osmanthus";
+	}
+
+	.overview > .section > .about > .content-wrap > .markdown a[href="https://www.youtube.com/watch?v=lfw8W3uWO7s"]
+	{
+		transform: translate(var(--first-column-song), var(--second-row-song));
+		background-image: url(https://i.ibb.co/jksHWZJ/all-night-radio.jpg);
+	}
+
+	.overview > .section > .about > .content-wrap > .markdown a[href="https://www.youtube.com/watch?v=lfw8W3uWO7s"]:hover::after
+	{
+		content: "All Night Radio";
+	}
+
+	.overview > .section > .about > .content-wrap > .markdown a[href="https://www.youtube.com/watch?v=jTVSU-Lr1ew"]
+	{
+		transform: translate(var(--second-column-song), var(--second-row-song));
+		background-image: url(https://i.imgur.com/D9CzXwB.jpg);
+	}
+
+	.overview > .section > .about > .content-wrap > .markdown a[href="https://www.youtube.com/watch?v=jTVSU-Lr1ew"]:hover::after
+	{
+		content: "Aitakute";
+	}
+
+	.overview > .section > .about > .content-wrap > .markdown a[href="https://www.youtube.com/watch?v=VQtmqpSE64w"]
+	{
+		transform: translate(var(--third-column-song), var(--second-row-song));
+		background-image: url(https://i.imgur.com/7ZS2aRA.jpg);
+	}
+
+	.overview > .section > .about > .content-wrap > .markdown a[href="https://www.youtube.com/watch?v=VQtmqpSE64w"]:hover::after
+	{
+		content: "missing";
+	}
+
+	.overview > .section > .about > .content-wrap > .markdown a[href="https://www.youtube.com/watch?v=BMb5IetESGE"]
+	{
+		transform: translate(var(--fourth-column-song), var(--second-row-song));
+		background-image: url(https://i.imgur.com/eS715uh.jpg);
+	}
+
+	.overview > .section > .about > .content-wrap > .markdown a[href="https://www.youtube.com/watch?v=BMb5IetESGE"]:hover::after
+	{
+		content: "KokoroToIuNanoFukakai";
+	}
+
+	.overview > .section > .about > .content-wrap > .markdown a[href="https://www.youtube.com/watch?v=W_fHWaoQwkw"]
+	{
+		transform: translate(var(--first-column-song), var(--third-row-song));
+		background-image: url(https://i.imgur.com/ZjPU2eR.jpg);
+	}
+
+	.overview > .section > .about > .content-wrap > .markdown a[href="https://www.youtube.com/watch?v=W_fHWaoQwkw"]:hover::after
+	{
+		content: "Kura Kura";
+	}
+
+	.overview > .section > .about > .content-wrap > .markdown a[href="https://www.youtube.com/watch?v=_wZfYtYwxro"]
+	{
+		transform: translate(var(--second-column-song), var(--third-row-song));
+		background-image: url(https://i.imgur.com/6VbkK6h.jpg);
+	}
+
+	.overview > .section > .about > .content-wrap > .markdown a[href="https://www.youtube.com/watch?v=_wZfYtYwxro"]:hover::after
+	{
+		content: "Motherland";
+	}
+	.overview > .section > .about > .content-wrap > .markdown a[href="https://www.youtube.com/watch?v=pgXpM4l_MwI"]
+	{
+		transform: translate(var(--third-column-song), var(--third-row-song));
+		background-image: url(https://i.imgur.com/kTD8sbZ.jpg);
+	}
+
+	.overview > .section > .about > .content-wrap > .markdown a[href="https://www.youtube.com/watch?v=pgXpM4l_MwI"]:hover::after
+	{
+		content: "Show";
+	}
+	.overview > .section > .about > .content-wrap > .markdown a[href="https://www.youtube.com/watch?v=ZHAnZTVF_10"]
+	{
+		transform: translate(var(--fourth-column-song), var(--third-row-song));
+		background-image: url(https://i.imgur.com/ai4EZj4.jpg);
+	}
+
+	.overview > .section > .about > .content-wrap > .markdown a[href="https://www.youtube.com/watch?v=ZHAnZTVF_10"]:hover::after
+	{
+		content: "Eien No Akuruhi";
+	}
+	.overview > .section > .about > .content-wrap > .markdown a[href="https://www.youtube.com/watch?v=eZuDklxsaRg"]
+	{
+		transform: translate(var(--first-column-song), var(--fourth-row-song));
+		background-image: url(https://i.imgur.com/bdjUS70.jpg);
+	}
+
+	.overview > .section > .about > .content-wrap > .markdown a[href="https://www.youtube.com/watch?v=eZuDklxsaRg"]:hover::after
+	{
+		content: "unravel";
+	}
+	.overview > .section > .about > .content-wrap > .markdown a[href="https://www.youtube.com/watch?v=Q9X0J_tLHwY"]
+	{
+		transform: translate(var(--second-column-song), var(--fourth-row-song));
+		background-image: url(https://i.imgur.com/cQmyWv6.jpg);
+	}
+
+	.overview > .section > .about > .content-wrap > .markdown a[href="https://www.youtube.com/watch?v=Q9X0J_tLHwY"]:hover::after
+	{
+		content: "Dignity";
+	}
+	.overview > .section > .about > .content-wrap > .markdown a[href="https://www.youtube.com/watch?v=jg09lNupc1s"]
+	{
+		transform: translate(var(--third-column-song), var(--fourth-row-song));
+		background-image: url(https://i.imgur.com/ENtIyjf.jpg);
+	}
+
+	.overview > .section > .about > .content-wrap > .markdown a[href="https://www.youtube.com/watch?v=jg09lNupc1s"]:hover::after
+	{
+		content: "Readymade";
+	}
+	.overview > .section > .about > .content-wrap > .markdown a[href="https://www.youtube.com/watch?v=cyq5-StPISU"]
+	{
+		transform: translate(var(--fourth-column-song), var(--fourth-row-song));
+		background-image: url(https://i.imgur.com/c2q9R0W.jpg);
+	}
+
+	.overview > .section > .about > .content-wrap > .markdown a[href="https://www.youtube.com/watch?v=cyq5-StPISU"]:hover::after
+	{
+		content: "Ashura-chan";
+	}
+	.overview > .section > .about > .content-wrap > .markdown a[href="https://www.youtube.com/watch?v=lZGo8jcEW2M"]
+	{
+		transform: translate(var(--first-column-song), var(--fifth-row-song));
+		background-image: url(https://i.imgur.com/CVcVFF9.jpg);
+	}
+
+	.overview > .section > .about > .content-wrap > .markdown a[href="https://www.youtube.com/watch?v=lZGo8jcEW2M"]:hover::after
+	{
+		content: "i'm a controversy";
+	}
+	.overview > .section > .about > .content-wrap > .markdown a[href="https://www.youtube.com/watch?v=YnSW8ian29w"]
+	{
+		transform: translate(var(--second-column-song), var(--fifth-row-song));
+		background-image: url(https://i.imgur.com/B24r1qg.jpg);
+	}
+
+	.overview > .section > .about > .content-wrap > .markdown a[href="https://www.youtube.com/watch?v=YnSW8ian29w"]:hover::after
+	{
+		content: "odo";
+	}
+	.overview > .section > .about > .content-wrap > .markdown a[href="https://www.youtube.com/watch?v=iL7uoLCbJoc"]
+	{
+		transform: translate(var(--third-column-song), var(--fifth-row-song));
+		background-image: url(https://i.imgur.com/iexoGJH.jpg);
+	}
+
+	.overview > .section > .about > .content-wrap > .markdown a[href="https://www.youtube.com/watch?v=iL7uoLCbJoc"]:hover::after
+	{
+		content: "Buriki No Dance";
+	}
+	.overview > .section > .about > .content-wrap > .markdown a[href="https://www.youtube.com/watch?v=sOiMD45QGLs"]
+	{
+		transform: translate(var(--fourth-column-song), var(--fifth-row-song));
+		background-image: url(https://i.imgur.com/eYOcXoy.jpg);
+	}
+
+	.overview > .section > .about > .content-wrap > .markdown a[href="https://www.youtube.com/watch?v=sOiMD45QGLs"]:hover::after
+	{
+		content: "Gira Gira";
+	}
+	.overview > .section > .about > .content-wrap > .markdown a[href="https://www.youtube.com/watch?v=V9_ZpqfqHFI"]
+	{
+		transform: translate(var(--first-column-song), var(--sixth-row-song));
+		background-image: url(https://i.imgur.com/gFf7UPz.jpg);
+	}
+
+	.overview > .section > .about > .content-wrap > .markdown a[href="https://www.youtube.com/watch?v=V9_ZpqfqHFI"]:hover::after
+	{
+		content: "Tot Musica";
+	}
+	.overview > .section > .about > .content-wrap > .markdown a[href="https://www.youtube.com/watch?v=oy2WTnhVT2w"]
+	{
+		transform: translate(var(--second-column-song), var(--sixth-row-song));
+		background-image: url(https://i.imgur.com/KsJnQiQ.jpg);
+	}
+
+	.overview > .section > .about > .content-wrap > .markdown a[href="https://www.youtube.com/watch?v=oy2WTnhVT2w"]:hover::after
+	{
+		content: "Ibara";
+	}
+	.overview > .section > .about > .content-wrap > .markdown a[href="https://www.youtube.com/watch?v=bSHe6T5iB2M"]
+	{
+		transform: translate(var(--third-column-song), var(--sixth-row-song));
+		background-image: url(https://i.imgur.com/tKOoRXX.jpg);
+	}
+
+	.overview > .section > .about > .content-wrap > .markdown a[href="https://www.youtube.com/watch?v=bSHe6T5iB2M"]:hover::after
+	{
+		content: "Himawari guitar";
+	}
+	.overview > .section > .about > .content-wrap > .markdown a[href="https://www.youtube.com/watch?v=nuvNgt60km4"]
+	{
+		transform: translate(var(--fourth-column-song), var(--sixth-row-song));
+		background-image: url(https://i.imgur.com/1uZyMUc.jpg);
+	}
+
+	.overview > .section > .about > .content-wrap > .markdown a[href="https://www.youtube.com/watch?v=nuvNgt60km4"]:hover::after
+	{
+		content: "Snow Song Show";
+	}
+
+	.overview > .section > .about > .content-wrap > .markdown b[href="door"] {
+		z-index: 20;
+		transform-origin: bottom left;
+		animation: 4s 1 forwards flipDoor;
+	}
+
+	.overview
+		> .section
+		> .about
+		> .content-wrap
+		> .markdown
+		b[href="door"]::before {
+		content: "24";
+	}
+
+	@keyframes flipDoor {
+		0% {
+			transform: translate(
+					var(--fourth-column-song),
+					var(--sixth-row-song)
+				)
+				rotateY(0deg);
+		}
+
+		100% {
+			transform: translate(
+					var(--fourth-column-song),
+					var(--sixth-row-song)
+				)
+				rotateY(110deg);
+		}
+	}
+
+	/* Adovent Calendar Title */
+	.overview
+		> .section
+		> .about
+		> .content-wrap
+		> .markdown
+		:is(a[href="https://www.youtube.com/watch?v=Qp3b-RXtz4w"])::before
+	{
+		content: "adovent calendar ♬";
+		position: absolute;
+		width: 300px;
+		top: -32px;
+		left: -5px;
+		overflow: visible;
+		word-break: keep-all;
+		color: rgb(var(--color-text)) !important;
+		font-size: 1.4rem;
+		font-style: italic;
+		font-weight: 700;
+		font-family: Overpass, -apple-system, BlinkMacSystemFont, Segoe UI,
+			Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+			sans-serif;
+		pointer-events: none;
+	}
+}
