@@ -1,30 +1,28 @@
-.favourites.preview .favourites-wrap {
+/* .favourites.preview .favourites-wrap {
 	display: grid !important;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(5, 1fr);
 	padding: 17px !important;
 	grid-gap: 15px;
 	margin-bottom: 5px !important;
-}
+} */
 
-.favourites.preview .favourites-wrap a.favourite {
+/* .favourites.preview .favourites-wrap a.favourite {
 	padding: 0 !important;
 	margin: 0 !important;
-}
+} */
 
-.favourites.preview .favourites-wrap.manga {
+/* .favourites.preview .favourites-wrap.manga {
 	grid-row-gap: 80px !important;
 	grid-template-areas:
-		"mg mg mg mg"
-		"ln ln2 ln3 ln4";
-}
+		"mg mg mg mg mg"
+		"ln ln2 ln3 ln4 ln5";
+} */
 
-.favourites.preview .favourites-wrap.manga a {
+/* .favourites.preview .favourites-wrap.manga a {
 	margin: 0px !important;
-}
+} */
 
-.favourites.preview
-	.favourites-wrap.manga
-	a.favourite[href*="manga/92550"]::before {
+.favourites.preview .favourites-wrap.manga a.favourite:nth-child(6):before {
 	content: "light novels";
 	position: absolute;
 	top: -32px;
@@ -35,23 +33,23 @@
 	width: 100px;
 	font-size: 1.4rem;
 	font-style: italic;
-	/* padding-left: 7px; */
+	padding-left: 18px;
 	font-weight: 700;
 	font-family: Overpass, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen,
 		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 /* Spice and Wolf */
-.favourites.preview .favourites-wrap.manga a.favourite[href*="manga/39115/"] {
+/* .favourites.preview .favourites-wrap.manga a.favourite[href*="manga/39115/"] {
 	grid-area: ln3;
-}
+} */
 
 /* Adachi to Shimamura */
-.favourites.preview .favourites-wrap.manga a.favourite[href*="manga/92550/"] {
+/* .favourites.preview .favourites-wrap.manga a.favourite[href*="manga/92550/"] {
 	grid-area: ln;
-}
+} */
 
 /* Regarding Saeki Sayaka */
-.favourites.preview .favourites-wrap.manga a.favourite[href*="manga/105388/"] {
+/* .favourites.preview .favourites-wrap.manga a.favourite[href*="manga/105388/"] {
 	grid-area: ln2;
-}
+} */
