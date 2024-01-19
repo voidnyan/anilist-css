@@ -11,12 +11,19 @@
 	margin: 0 !important;
 } */
 
-/* .favourites.preview .favourites-wrap.manga {
-	grid-row-gap: 80px !important;
-	grid-template-areas:
-		"mg mg mg mg mg"
-		"ln ln2 ln3 ln4 ln5";
-} */
+.favourites.preview
+	.favourites-wrap
+	a.favourite:not(.favourites.preview .favourites-wrap.studios a.favourite) {
+	padding: 0 !important;
+	margin: 0 !important;
+	width: auto !important;
+	height: auto !important;
+	min-height: 60px;
+}
+
+.favourites.preview .favourites-wrap.manga {
+	grid-row-gap: 65px !important;
+}
 
 /* .favourites.preview .favourites-wrap.manga a {
 	margin: 0px !important;
@@ -37,6 +44,7 @@
 	font-weight: 700;
 	font-family: Overpass, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen,
 		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	pointer-events: none;
 }
 
 /* Spice and Wolf */
