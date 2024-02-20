@@ -16,7 +16,7 @@
 	content: "light novels";
 	position: absolute;
 	top: -32px;
-	left: -5px;
+	left: -25px;
 	overflow: visible;
 	word-break: keep-all;
 	color: rgb(var(--color-text)) !important;
