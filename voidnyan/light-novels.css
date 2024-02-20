@@ -1,16 +1,3 @@
-/* .favourites.preview .favourites-wrap {
-	display: grid !important;
-	grid-template-columns: repeat(5, 1fr);
-	padding: 17px !important;
-	grid-gap: 15px;
-	margin-bottom: 5px !important;
-} */
-
-/* .favourites.preview .favourites-wrap a.favourite {
-	padding: 0 !important;
-	margin: 0 !important;
-} */
-
 .favourites.preview
 	.favourites-wrap
 	a.favourite:not(.favourites.preview .favourites-wrap.studios a.favourite) {
@@ -25,11 +12,7 @@
 	grid-row-gap: 65px !important;
 }
 
-/* .favourites.preview .favourites-wrap.manga a {
-	margin: 0px !important;
-} */
-
-.favourites.preview .favourites-wrap.manga a.favourite:nth-child(6):before {
+.favourites.preview .favourites-wrap.manga a.favourite:nth-child(4):before {
 	content: "light novels";
 	position: absolute;
 	top: -32px;
@@ -46,18 +29,3 @@
 		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 	pointer-events: none;
 }
-
-/* Spice and Wolf */
-/* .favourites.preview .favourites-wrap.manga a.favourite[href*="manga/39115/"] {
-	grid-area: ln3;
-} */
-
-/* Adachi to Shimamura */
-/* .favourites.preview .favourites-wrap.manga a.favourite[href*="manga/92550/"] {
-	grid-area: ln;
-} */
-
-/* Regarding Saeki Sayaka */
-/* .favourites.preview .favourites-wrap.manga a.favourite[href*="manga/105388/"] {
-	grid-area: ln2;
-} */
